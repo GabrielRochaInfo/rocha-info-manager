@@ -1,0 +1,109 @@
+
+{% extends "base.html" %}
+
+{% block title %}Produtos | Rocha Info{% endblock %}
+
+{% block content %}
+
+<div class="page-heading">
+    <div>
+        <span class="section-tag">CONTROLE DE ESTOQUE</span>
+        <h1>Produtos</h1>
+        <p>Gerencie os produtos cadastrados na Rocha Info.</p>
+    </div>
+
+    <a href="{{ url_for('novo_produto') }}" class="btn-primary">
+        + Novo produto
+    </a>
+</div>
+
+{% with mensagens = get_flashed_messages(with_categories=true) %}
+    {% for categoria, mensagem in mensagens %}
+        <div class="alert {{ categoria }}">{{ mensagem }}</div>
+    {% endfor %}
+{% endwith %}
+
+<div class="panel">
+
+    <div class="panel-heading">
+        <div>
+            <h3>Lista de produtos</h3>
+            <p>{{ produtos|length }} produto(s) cadastrado(s)</p>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for produto in produtos %}
+                <tr>
+                    <td>
+                        <strong>{{ produto.nome }}</strong>
+                        <small class="table-subtitle">{{ produto.modelo }}</small>
+                    </td>
+
+                    <td>{{ produto.categoria }}</td>
+                    <td>{{ produto.marca }}</td>
+
+                    <td>
+                        R$ {{ "%.2f"|format(produto.preco_venda) }}
+                    </td>
+
+                    <td>
+                        <span class="{% if produto.quantidade <= 3 %}stock-low{% else %}stock-normal{% endif %}">
+                            {{ produto.quantidade }}
+                        </span>
+                    </td>
+
+                    <td>
+                        {% if produto.ativo %}
+                            <span class="badge-active">Ativo</span>
+                        {% else %}
+                            <span class="badge-inactive">Inativo</span>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        <div class="actions">
+                            <a class="btn-edit"
+                               href="{{ url_for('editar_produto', id=produto._id) }}">
+                                Editar
+                            </a>
+
+                            <form method="POST"
+                                  action="{{ url_for('excluir_produto', id=produto._id) }}"
+                                  onsubmit="return confirm('Deseja realmente excluir este produto?')">
+                                <button class="btn-delete" type="submit">
+                                    Excluir
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+
+                {% else %}
+                <tr>
+                    <td colspan="7" class="empty-table">
+                        Nenhum produto cadastrado.
+                        Clique em "Novo produto" para começar.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

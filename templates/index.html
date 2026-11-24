@@ -1,0 +1,97 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <div>
+        <h1>Dashboard</h1>
+        <p>Visão geral da Rocha Info.</p>
+    </div>
+</div>
+
+<div class="dashboard-grid">
+
+    <div class="stat-card">
+        <h3>Produtos cadastrados</h3>
+        <div class="stat-number">{{ total_produtos }}</div>
+    </div>
+
+    <div class="stat-card">
+        <h3>Produtos ativos</h3>
+        <div class="stat-number">{{ produtos_ativos }}</div>
+    </div>
+
+    <div class="stat-card">
+        <h3>Vendas realizadas</h3>
+        <div class="stat-number">{{ total_vendas }}</div>
+    </div>
+
+    <div class="stat-card">
+        <h3>Faturamento total</h3>
+        <div class="stat-number">
+            R$ {{ "%.2f"|format(faturamento) }}
+        </div>
+    </div>
+
+</div>
+
+<div class="dashboard-grid" style="margin-top: 25px;">
+
+    <section class="table-container">
+        <h2>Vendas recentes</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Data</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for venda in vendas_recentes %}
+                <tr>
+                    <td>{{ venda.cliente.nome }}</td>
+                    <td>{{ venda.data_venda.strftime('%d/%m/%Y') }}</td>
+                    <td>R$ {{ "%.2f"|format(venda.total) }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="3">Nenhuma venda registrada.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+    <section class="table-container">
+        <h2>Estoque baixo</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for produto in produtos_estoque_baixo %}
+                <tr>
+                    <td>{{ produto.nome }}</td>
+                    <td>{{ produto.quantidade }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="2">Nenhum produto com estoque baixo.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+{% endblock %}

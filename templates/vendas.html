@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1>Vendas</h1>
+        <p>Histórico de vendas realizadas na Rocha Info.</p>
+    </div>
+
+    <a href="{{ url_for('nova_venda') }}" class="btn btn-primary">
+        + Nova venda
+    </a>
+</div>
+
+{% with mensagens = get_flashed_messages(with_categories=true) %}
+    {% if mensagens %}
+        {% for categoria, mensagem in mensagens %}
+            <div class="alert {{ categoria }}">{{ mensagem }}</div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Cliente</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Pagamento</th>
+                <th>Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for venda in vendas %}
+            <tr>
+                <td>{{ venda.data_venda.strftime('%d/%m/%Y %H:%M') }}</td>
+                <td>{{ venda.cliente.nome }}</td>
+                <td>{{ venda.itens[0].nome_produto }}</td>
+                <td>{{ venda.itens[0].quantidade }}</td>
+                <td>{{ venda.forma_pagamento }}</td>
+                <td>R$ {{ "%.2f"|format(venda.total) }}</td>
+                <td>
+                    <form method="POST"
+                          action="{{ url_for('excluir_venda', id=venda._id) }}"
+                          onsubmit="return confirm('Excluir esta venda e devolver os produtos ao estoque?')">
+                        <button type="submit" class="btn btn-danger">
+                            Excluir
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="7">Nenhuma venda cadastrada.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

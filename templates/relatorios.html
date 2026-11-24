@@ -1,0 +1,45 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page-header">
+    <div>
+        <h1>Relatórios</h1>
+        <p>Consulte informações e análises da Rocha Info.</p>
+    </div>
+</div>
+
+<div class="relatorios-grid">
+
+    <a href="{{ url_for('relatorio_estoque') }}" class="relatorio-card">
+        <div class="relatorio-icon">▣</div>
+        <h2>Estoque baixo</h2>
+        <p>Consulte produtos que estão com poucas unidades disponíveis.</p>
+        <span>Acessar relatório →</span>
+    </a>
+
+    <a href="{{ url_for('relatorio_categoria_preco') }}" class="relatorio-card">
+        <div class="relatorio-icon">▤</div>
+        <h2>Categoria e preço</h2>
+        <p>Filtre os produtos por categoria e faixa de preço.</p>
+        <span>Acessar relatório →</span>
+    </a>
+
+    <a href="{{ url_for('relatorio_faturamento') }}" class="relatorio-card">
+        <div class="relatorio-icon">▥</div>
+        <h2>Faturamento por categoria</h2>
+        <p>Visualize o faturamento e a quantidade vendida em cada categoria.</p>
+        <span>Acessar relatório →</span>
+    </a>
+
+    <a href="{{ url_for('relatorio_mais_vendidos') }}" class="relatorio-card">
+        <div class="relatorio-icon">★</div>
+        <h2>Produtos mais vendidos</h2>
+        <p>Confira o ranking dos produtos com maior quantidade vendida.</p>
+        <span>Acessar relatório →</span>
+    </a>
+
+</div>
+
+{% endblock %}

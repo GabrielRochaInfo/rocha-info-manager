@@ -1,0 +1,80 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <div>
+        <h1>Nova venda</h1>
+        <p>Preencha os dados para registrar uma venda.</p>
+    </div>
+</div>
+
+{% with mensagens = get_flashed_messages(with_categories=true) %}
+    {% if mensagens %}
+        {% for categoria, mensagem in mensagens %}
+            <div class="alert {{ categoria }}">{{ mensagem }}</div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<div class="form-container">
+    <form method="POST">
+
+        <div class="form-group">
+            <label>Nome do cliente</label>
+            <input type="text" name="cliente" required>
+        </div>
+
+        <div class="form-group">
+            <label>Telefone do cliente</label>
+            <input type="text" name="telefone">
+        </div>
+
+        <div class="form-group">
+            <label>Produto</label>
+            <select name="produto_id" required>
+                <option value="">Selecione um produto</option>
+
+                {% for produto in produtos %}
+                <option value="{{ produto._id }}">
+                    {{ produto.nome }} — Estoque: {{ produto.quantidade }}
+                    — R$ {{ "%.2f"|format(produto.preco_venda) }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Quantidade</label>
+            <input type="number" name="quantidade" min="1" value="1" required>
+        </div>
+
+        <div class="form-group">
+            <label>Forma de pagamento</label>
+            <select name="forma_pagamento" required>
+                <option value="">Selecione</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Débito">Cartão de débito</option>
+                <option value="Crédito">Cartão de crédito</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Observações</label>
+            <textarea name="observacoes" rows="3"></textarea>
+        </div>
+
+        <div class="form-actions">
+            <a href="{{ url_for('vendas') }}" class="btn btn-secondary">
+                Cancelar
+            </a>
+
+            <button type="submit" class="btn btn-primary">
+                Registrar venda
+            </button>
+        </div>
+
+    </form>
+</div>
+{% endblock %}

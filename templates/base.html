@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Rocha Info Manager{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">R</div>
+            <div>
+                <h2>ROCHA INFO</h2>
+                <span>MANAGER</span>
+            </div>
+        </div>
+
+        <div class="menu-label">MENU PRINCIPAL</div>
+
+        <nav>
+            <a href="/" class="{% if request.path == '/' %}active{% endif %}">
+                <span>▦</span> Dashboard
+            </a>
+
+            <a href="/produtos" class="{% if request.path == '/produtos' %}active{% endif %}">
+                <span>▣</span> Produtos
+            </a>
+
+            <a href="/vendas" class="{% if request.path == '/vendas' %}active{% endif %}">
+                <span>↗</span> Vendas
+            </a>
+
+            <a href="/relatorios" class="{% if request.path == '/relatorios' %}active{% endif %}">
+                <span>▤</span> Relatórios
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <strong>Rocha Info</strong>
+            <small>Sistema de gerenciamento</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">Rocha Info / Sistema</span>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">GR</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-content">
+            {% block content %}{% endblock %}
+        </section>
+
+        <footer class="footer">
+            Rocha Info Manager © 2026
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>

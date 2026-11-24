@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<a href="{{ url_for('relatorios') }}" class="btn-voltar">← Voltar aos relatórios</a>
+
+<div class="page-header">
+    <div>
+        <h1>Faturamento por categoria</h1>
+        <p>Faturamento e quantidade de produtos vendidos por categoria.</p>
+    </div>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Quantidade vendida</th>
+                <th>Faturamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in faturamento_categoria %}
+            <tr>
+                <td>{{ item.categoria }}</td>
+                <td>{{ item.quantidade_vendida }}</td>
+                <td>R$ {{ "%.2f"|format(item.total_vendido) }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3">Ainda não existem vendas registradas.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

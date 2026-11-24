@@ -1,0 +1,131 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ 'Editar' if produto else 'Novo' }} Produto | Rocha Info{% endblock %}
+
+{% block content %}
+
+<div class="page-heading">
+    <div>
+        <span class="section-tag">GESTÃO DE PRODUTOS</span>
+        <h1>{{ 'Editar produto' if produto else 'Novo produto' }}</h1>
+        <p>Preencha as informações do produto.</p>
+    </div>
+    <a href="{{ url_for('produtos') }}" class="btn-secondary">Voltar</a>
+</div>
+
+{% with mensagens = get_flashed_messages(with_categories=true) %}
+    {% for categoria, mensagem in mensagens %}
+        <div class="alert {{ categoria }}">{{ mensagem }}</div>
+    {% endfor %}
+{% endwith %}
+
+<div class="panel form-panel">
+
+    <form method="POST">
+
+        <h3>Informações gerais</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Nome do produto *</label>
+                <input type="text" name="nome" required
+                    value="{{ produto.nome if produto else '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>Categoria *</label>
+                <select name="categoria" required>
+                    {% for cat in ['Computadores','Consoles','Periféricos','Peças','Notebooks','Outros'] %}
+                    <option value="{{ cat }}"
+                        {% if produto and produto.categoria == cat %}selected{% endif %}>
+                        {{ cat }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Marca *</label>
+                <input type="text" name="marca" required
+                    value="{{ produto.marca if produto else '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>Modelo</label>
+                <input type="text" name="modelo"
+                    value="{{ produto.modelo if produto else '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>Condição</label>
+                <select name="condicao">
+                    {% for cond in ['Novo','Seminovo','Usado','Recondicionado'] %}
+                    <option value="{{ cond }}"
+                        {% if produto and produto.especificacoes.condicao == cond %}selected{% endif %}>
+                        {{ cond }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Garantia (dias)</label>
+                <input type="number" name="garantia" min="0" required
+                    value="{{ produto.especificacoes.garantia_dias if produto else 90 }}">
+            </div>
+
+            <div class="form-group full-width">
+                <label>Descrição</label>
+                <textarea name="descricao" rows="3">{{ produto.descricao if produto else '' }}</textarea>
+            </div>
+
+        </div>
+
+        <h3 class="form-section">Valores e estoque</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Preço de compra (R$) *</label>
+                <input type="number" name="preco_compra" step="0.01" min="0" required
+                    value="{{ produto.preco_compra if produto else '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>Preço de venda (R$) *</label>
+                <input type="number" name="preco_venda" step="0.01" min="0" required
+                    value="{{ produto.preco_venda if produto else '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>Quantidade em estoque *</label>
+                <input type="number" name="quantidade" min="0" required
+                    value="{{ produto.quantidade if produto else 1 }}">
+            </div>
+
+            {% if produto %}
+            <div class="form-group">
+                <label>Situação</label>
+                <select name="ativo">
+                    <option value="sim" {% if produto.ativo %}selected{% endif %}>Ativo</option>
+                    <option value="nao" {% if not produto.ativo %}selected{% endif %}>Inativo</option>
+                </select>
+            </div>
+            {% endif %}
+
+        </div>
+
+        <div class="form-actions">
+            <a href="{{ url_for('produtos') }}" class="btn-secondary">Cancelar</a>
+            <button type="submit" class="btn-primary">
+                {{ 'Salvar alterações' if produto else 'Cadastrar produto' }}
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+[
+    {
+        "_id": {
+            "$oid": "6b04e1fc83ff1c2f75a6a2b8"
+        },
+        "cliente": {
+            "nome": "Gustavo",
+            "telefone": "15 997043843"
+        },
+        "itens": [
+            {
+                "produto_id": {
+                    "$oid": "6b04c3a2c12a2bb82689341b"
+                },
+                "nome_produto": "Placa de vídeo RX 6600 8GB",
+                "categoria": "Peças",
+                "quantidade": 1,
+                "preco_unitario": 1299.9,
+                "subtotal": 1299.9
+            }
+        ],
+        "total": 1299.9,
+        "forma_pagamento": "Pix",
+        "status": "Concluída",
+        "observacoes": "",
+        "data_venda": {
+            "$date": "2026-11-23T22:01:48.223Z"
+        }
+    }
+]

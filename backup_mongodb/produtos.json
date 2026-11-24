@@ -1,0 +1,901 @@
+[
+    {
+        "_id": {
+            "$oid": "6b04bac0342015536527d4e6"
+        },
+        "nome": "Playstaion 5 slim 825GB",
+        "categoria": "Consoles",
+        "marca": "Sony",
+        "modelo": "PS5 Slim Digital",
+        "descricao": "Console revisado e higienizado",
+        "preco_compra": 2800.0,
+        "preco_venda": 3299.0,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 365
+        },
+        "historico_precos": [
+            {
+                "preco": 3299.0,
+                "data": {
+                    "$date": "2026-11-23T19:14:24.491Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:14:24.491Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689340c"
+        },
+        "nome": "PC Gamer Ryzen 5 5600",
+        "categoria": "Computadores",
+        "marca": "AMD",
+        "modelo": "Ryzen 5 5600 / RTX 3060",
+        "descricao": "Computador gamer revisado",
+        "preco_compra": 2800.0,
+        "preco_venda": 3599.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 3599.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689340d"
+        },
+        "nome": "PC Gamer Ryzen 5 5500",
+        "categoria": "Computadores",
+        "marca": "AMD",
+        "modelo": "Ryzen 5 5500 / RX 6600",
+        "descricao": "Computador para jogos em Full HD",
+        "preco_compra": 2400.0,
+        "preco_venda": 3199.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 3199.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689340e"
+        },
+        "nome": "PC Intel Core i5 10400F",
+        "categoria": "Computadores",
+        "marca": "Intel",
+        "modelo": "i5 10400F / GTX 1650",
+        "descricao": "Computador para jogos e uso geral",
+        "preco_compra": 1700.0,
+        "preco_venda": 2299.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2299.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689340f"
+        },
+        "nome": "PC Ryzen 5 5600G",
+        "categoria": "Computadores",
+        "marca": "AMD",
+        "modelo": "Ryzen 5 5600G / Vega 7",
+        "descricao": "Computador com vídeo integrado",
+        "preco_compra": 1500.0,
+        "preco_venda": 2099.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2099.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893410"
+        },
+        "nome": "PC Intel Core i3 10100F",
+        "categoria": "Computadores",
+        "marca": "Intel",
+        "modelo": "i3 10100F / RX 570",
+        "descricao": "Computador de entrada",
+        "preco_compra": 1200.0,
+        "preco_venda": 1699.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Usado",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1699.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893411"
+        },
+        "nome": "PlayStation 5 Slim Digital",
+        "categoria": "Consoles",
+        "marca": "Sony",
+        "modelo": "PS5 Slim Digital",
+        "descricao": "Console revisado e higienizado",
+        "preco_compra": 2200.0,
+        "preco_venda": 2799.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2799.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893412"
+        },
+        "nome": "PlayStation 5 Slim com leitor",
+        "categoria": "Consoles",
+        "marca": "Sony",
+        "modelo": "PS5 Slim Disc",
+        "descricao": "Console com leitor de discos",
+        "preco_compra": 2450.0,
+        "preco_venda": 3099.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 3099.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893413"
+        },
+        "nome": "PlayStation 4 Slim 1TB",
+        "categoria": "Consoles",
+        "marca": "Sony",
+        "modelo": "PS4 Slim 1TB",
+        "descricao": "Console revisado",
+        "preco_compra": 950.0,
+        "preco_venda": 1399.9,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1399.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893414"
+        },
+        "nome": "Xbox Series S 512GB",
+        "categoria": "Consoles",
+        "marca": "Microsoft",
+        "modelo": "Series S 512GB",
+        "descricao": "Console compacto de nova geração",
+        "preco_compra": 1350.0,
+        "preco_venda": 1799.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1799.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893415"
+        },
+        "nome": "Nintendo Switch V2",
+        "categoria": "Consoles",
+        "marca": "Nintendo",
+        "modelo": "Switch V2",
+        "descricao": "Console portátil e de mesa",
+        "preco_compra": 850.0,
+        "preco_venda": 1199.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1199.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893416"
+        },
+        "nome": "Nintendo Switch OLED",
+        "categoria": "Consoles",
+        "marca": "Nintendo",
+        "modelo": "Switch OLED",
+        "descricao": "Console com tela OLED",
+        "preco_compra": 1250.0,
+        "preco_venda": 1699.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1699.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893417"
+        },
+        "nome": "Notebook Lenovo IdeaPad 3",
+        "categoria": "Notebooks",
+        "marca": "Lenovo",
+        "modelo": "IdeaPad 3 Ryzen 5",
+        "descricao": "Notebook para estudos e trabalho",
+        "preco_compra": 1700.0,
+        "preco_venda": 2199.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2199.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893418"
+        },
+        "nome": "Notebook Acer Aspire 5",
+        "categoria": "Notebooks",
+        "marca": "Acer",
+        "modelo": "Aspire 5 Core i5",
+        "descricao": "Notebook para produtividade",
+        "preco_compra": 1900.0,
+        "preco_venda": 2499.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2499.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893419"
+        },
+        "nome": "Notebook Dell Inspiron",
+        "categoria": "Notebooks",
+        "marca": "Dell",
+        "modelo": "Inspiron Core i5",
+        "descricao": "Notebook para uso diário",
+        "preco_compra": 1500.0,
+        "preco_venda": 1999.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Usado",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1999.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341a"
+        },
+        "nome": "Placa de vídeo RTX 3050 8GB",
+        "categoria": "Peças",
+        "marca": "NVIDIA",
+        "modelo": "RTX 3050 8GB",
+        "descricao": "Placa de vídeo para jogos",
+        "preco_compra": 850.0,
+        "preco_venda": 1099.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1099.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341b"
+        },
+        "nome": "Placa de vídeo RX 6600 8GB",
+        "categoria": "Peças",
+        "marca": "AMD",
+        "modelo": "RX 6600 8GB",
+        "descricao": "Placa de vídeo Full HD",
+        "preco_compra": 950.0,
+        "preco_venda": 1299.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 1299.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341c"
+        },
+        "nome": "Placa de vídeo GTX 1660 Super",
+        "categoria": "Peças",
+        "marca": "NVIDIA",
+        "modelo": "GTX 1660 Super 6GB",
+        "descricao": "Placa de vídeo para jogos",
+        "preco_compra": 650.0,
+        "preco_venda": 899.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Usado",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 899.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341d"
+        },
+        "nome": "Processador Ryzen 5 5600",
+        "categoria": "Peças",
+        "marca": "AMD",
+        "modelo": "Ryzen 5 5600",
+        "descricao": "Processador AM4 de seis núcleos",
+        "preco_compra": 650.0,
+        "preco_venda": 799.9,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 799.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341e"
+        },
+        "nome": "Processador Ryzen 5 5600G",
+        "categoria": "Peças",
+        "marca": "AMD",
+        "modelo": "Ryzen 5 5600G",
+        "descricao": "Processador com vídeo integrado",
+        "preco_compra": 550.0,
+        "preco_venda": 699.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 699.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb82689341f"
+        },
+        "nome": "Memória RAM DDR4 16GB",
+        "categoria": "Peças",
+        "marca": "Kingston",
+        "modelo": "Fury 16GB 3200MHz",
+        "descricao": "Memória DDR4 para computadores",
+        "preco_compra": 180.0,
+        "preco_venda": 249.9,
+        "quantidade": 5,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 249.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893420"
+        },
+        "nome": "SSD NVMe 500GB",
+        "categoria": "Peças",
+        "marca": "Kingston",
+        "modelo": "NV2 500GB",
+        "descricao": "Armazenamento SSD NVMe",
+        "preco_compra": 180.0,
+        "preco_venda": 249.9,
+        "quantidade": 5,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 249.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893421"
+        },
+        "nome": "Fonte Corsair 550W",
+        "categoria": "Peças",
+        "marca": "Corsair",
+        "modelo": "CV550 550W",
+        "descricao": "Fonte para computadores",
+        "preco_compra": 280.0,
+        "preco_venda": 369.9,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 369.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893422"
+        },
+        "nome": "Monitor LG UltraGear 27",
+        "categoria": "Periféricos",
+        "marca": "LG",
+        "modelo": "27GN65R 144Hz",
+        "descricao": "Monitor gamer Full HD",
+        "preco_compra": 500.0,
+        "preco_venda": 699.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 699.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893423"
+        },
+        "nome": "Teclado Mecânico Redragon",
+        "categoria": "Periféricos",
+        "marca": "Redragon",
+        "modelo": "Kumara RGB",
+        "descricao": "Teclado mecânico RGB",
+        "preco_compra": 120.0,
+        "preco_venda": 179.9,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 179.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893424"
+        },
+        "nome": "Mouse Gamer Logitech G203",
+        "categoria": "Periféricos",
+        "marca": "Logitech",
+        "modelo": "G203 Lightsync",
+        "descricao": "Mouse gamer com iluminação RGB",
+        "preco_compra": 100.0,
+        "preco_venda": 149.9,
+        "quantidade": 4,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 149.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893425"
+        },
+        "nome": "Headset HyperX Cloud Stinger",
+        "categoria": "Periféricos",
+        "marca": "HyperX",
+        "modelo": "Cloud Stinger",
+        "descricao": "Headset para jogos",
+        "preco_compra": 150.0,
+        "preco_venda": 219.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 219.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893426"
+        },
+        "nome": "Controle DualSense PS5",
+        "categoria": "Periféricos",
+        "marca": "Sony",
+        "modelo": "DualSense",
+        "descricao": "Controle sem fio para PlayStation 5",
+        "preco_compra": 250.0,
+        "preco_venda": 349.9,
+        "quantidade": 3,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 349.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893427"
+        },
+        "nome": "Controle Xbox Wireless",
+        "categoria": "Periféricos",
+        "marca": "Microsoft",
+        "modelo": "Xbox Wireless Controller",
+        "descricao": "Controle sem fio para Xbox e PC",
+        "preco_compra": 220.0,
+        "preco_venda": 299.9,
+        "quantidade": 2,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 299.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893428"
+        },
+        "nome": "Webcam Logitech C920",
+        "categoria": "Periféricos",
+        "marca": "Logitech",
+        "modelo": "C920 HD Pro",
+        "descricao": "Webcam Full HD para reuniões e transmissões",
+        "preco_compra": 250.0,
+        "preco_venda": 329.9,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Seminovo",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 329.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04c3a2c12a2bb826893429"
+        },
+        "nome": "Mousepad Gamer Grande",
+        "categoria": "Periféricos",
+        "marca": "Redragon",
+        "modelo": "Mousepad Extended",
+        "descricao": "Mousepad de superfície estendida",
+        "preco_compra": 35.0,
+        "preco_venda": 59.9,
+        "quantidade": 6,
+        "especificacoes": {
+            "condicao": "Novo",
+            "garantia_dias": 30
+        },
+        "historico_precos": [
+            {
+                "preco": 59.9,
+                "data": {
+                    "$date": "2026-11-23T19:52:18.443Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    }
+]
