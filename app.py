@@ -1,9 +1,9 @@
 
-
 from flask import Flask, render_template, request, redirect, url_for, flash
 from database import db, testar_conexao
 from bson import ObjectId
 from datetime import datetime
+import plotly.graph_objects as go
 
 app = Flask(__name__)
 app.secret_key = "rocha-info-chave-local"
@@ -385,7 +385,7 @@ def relatorio_categoria_preco():
     )
 
 
-# RELATÓRIO 3: FATURAMENTO POR CATEGORIA
+
 @app.route("/relatorios/faturamento-categoria")
 def relatorio_faturamento():
     faturamento_categoria = list(vendas_col.aggregate([
@@ -408,11 +408,41 @@ def relatorio_faturamento():
         }
     ]))
 
+    grafico_html = None
+
+    if faturamento_categoria:
+        categorias = [
+            item["categoria"] for item in faturamento_categoria
+        ]
+
+        valores = [
+            float(item["total_vendido"]) for item in faturamento_categoria
+        ]
+
+        fig = go.Figure(data=[go.Pie(
+            labels=categorias,
+            values=valores,
+            textinfo="label+percent",
+            hovertemplate="%{label}<br>Faturamento: R$ %{value:.2f}<extra></extra>"
+        )])
+
+        fig.update_layout(
+            title="Participação no faturamento por categoria",
+            height=450,
+            margin=dict(t=60, b=20, l=20, r=20)
+        )
+
+        grafico_html = fig.to_html(
+            full_html=False,
+            include_plotlyjs="cdn",
+            config={"responsive": True}
+        )
+
     return render_template(
         "relatorio_faturamento.html",
-        faturamento_categoria=faturamento_categoria
+        faturamento_categoria=faturamento_categoria,
+        grafico_html=grafico_html
     )
-
 
 # RELATÓRIO 4: PRODUTOS MAIS VENDIDOS
 @app.route("/relatorios/mais-vendidos")

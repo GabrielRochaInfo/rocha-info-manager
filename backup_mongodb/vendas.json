@@ -26,5 +26,61 @@
         "data_venda": {
             "$date": "2026-11-23T22:01:48.223Z"
         }
+    },
+    {
+        "_id": {
+            "$oid": "6b04ecd651416cddcb372238"
+        },
+        "cliente": {
+            "nome": "Guilherme",
+            "telefone": "15 997043832"
+        },
+        "itens": [
+            {
+                "produto_id": {
+                    "$oid": "6b04c3a2c12a2bb826893418"
+                },
+                "nome_produto": "Notebook Acer Aspire 5",
+                "categoria": "Notebooks",
+                "quantidade": 1,
+                "preco_unitario": 2499.9,
+                "subtotal": 2499.9
+            }
+        ],
+        "total": 2499.9,
+        "forma_pagamento": "Débito",
+        "status": "Concluída",
+        "observacoes": "",
+        "data_venda": {
+            "$date": "2026-11-23T22:48:06.553Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "6b04ecf151416cddcb372239"
+        },
+        "cliente": {
+            "nome": "Luiz",
+            "telefone": "15 99703453"
+        },
+        "itens": [
+            {
+                "produto_id": {
+                    "$oid": "6b04c3a2c12a2bb826893414"
+                },
+                "nome_produto": "Xbox Series S 512GB",
+                "categoria": "Consoles",
+                "quantidade": 1,
+                "preco_unitario": 1799.9,
+                "subtotal": 1799.9
+            }
+        ],
+        "total": 1799.9,
+        "forma_pagamento": "Dinheiro",
+        "status": "Concluída",
+        "observacoes": "",
+        "data_venda": {
+            "$date": "2026-11-23T22:48:33.362Z"
+        }
     }
 ]

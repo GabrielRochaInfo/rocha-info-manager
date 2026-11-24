@@ -11,6 +11,12 @@
     </div>
 </div>
 
+{% if grafico_html %}
+<div class="table-container" style="padding: 20px; margin-bottom: 24px;">
+    {{ grafico_html | safe }}
+</div>
+{% endif %}
+
 <div class="table-container">
     <table>
         <thead>
@@ -28,7 +34,9 @@
                 <td>R$ {{ "%.2f"|format(item.total_vendido) }}</td>
             </tr>
             {% else %}
-            <tr><td colspan="3">Ainda não existem vendas registradas.</td></tr>
+            <tr>
+                <td colspan="3">Ainda não existem vendas registradas.</td>
+            </tr>
             {% endfor %}
         </tbody>
     </table>

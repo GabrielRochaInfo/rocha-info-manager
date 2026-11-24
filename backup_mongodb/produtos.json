@@ -271,7 +271,7 @@
         "descricao": "Console compacto de nova geração",
         "preco_compra": 1350.0,
         "preco_venda": 1799.9,
-        "quantidade": 2,
+        "quantidade": 1,
         "especificacoes": {
             "condicao": "Seminovo",
             "garantia_dias": 90
@@ -387,7 +387,7 @@
         "descricao": "Notebook para produtividade",
         "preco_compra": 1900.0,
         "preco_venda": 2499.9,
-        "quantidade": 1,
+        "quantidade": 0,
         "especificacoes": {
             "condicao": "Seminovo",
             "garantia_dias": 90
@@ -895,6 +895,41 @@
         ],
         "data_cadastro": {
             "$date": "2026-11-23T19:52:18.443Z"
+        },
+        "ativo": true
+    },
+    {
+        "_id": {
+            "$oid": "6b04ec2051416cddcb372237"
+        },
+        "nome": "Playstaion 5 slim 825GB",
+        "categoria": "Consoles",
+        "marca": "Sony",
+        "modelo": "PS5 Slim Digital",
+        "descricao": "",
+        "preco_compra": 2000.0,
+        "preco_venda": 2499.0,
+        "quantidade": 1,
+        "especificacoes": {
+            "condicao": "Recondicionado",
+            "garantia_dias": 90
+        },
+        "historico_precos": [
+            {
+                "preco": 2999.0,
+                "data": {
+                    "$date": "2026-11-23T22:45:04.798Z"
+                }
+            },
+            {
+                "preco": 2499.0,
+                "data": {
+                    "$date": "2026-11-23T22:45:19.221Z"
+                }
+            }
+        ],
+        "data_cadastro": {
+            "$date": "2026-11-23T22:45:04.798Z"
         },
         "ativo": true
     }
